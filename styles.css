@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-image: url(imgs/background.png);
+    background-size:100%;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+    overflow-x:hidden;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+    font-family: "San Francisco";
+}
+
+
+
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 4rem;
+    align-items: center;
+    padding-right:1.5rem ;
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+
+
+}
+.nav-link{
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight:bolder;
+}
+
+
+.section1{
+    position: relative; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    /* height: 800px; */
+    margin-top: 15rem;
+
+
+    
+}
+.sec1-about1{
+    grid-area: 1/1/1/2;
+    align-self: center;
+    text-align:left;
+    padding-left: 1rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+
+}
+
+
+.stk1{
+    grid-area: 2/2/3/3;
+    align-self: end;
+    position: absolute;
+    justify-self: center;
+        
+    
+}
+
+
+.text-name{
+    grid-area: 2/1/3/4;
+    align-self: center;
+    font-size: 10rem;
+    white-space: nowrap;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-name: scroll-text;
+    text-transform: uppercase;
+}
+
+.sec1-about2{
+    grid-area: 1/3/1/4;
+    position:absolute;
+    right: 1px;
+    align-self: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+
+}
+@keyframes scroll-text {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+
+.effectsImg {
+
+    margin-left: 5rem;
+}
+.section2 div h1{
+    color: #F2613F;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+
+}
+.section2 div h2{
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.section3{
+    background-color: rgba(0, 0, 0, 0.635);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+}
+.skills-section{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+}
+
+#skill{
+    background-color: #9B3922;
+    width: 7rem;
+    height:8rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    /* font-weight: bold; */
+    text-align: center;
+    padding: 1rem;
+}
+
+.skills-section img {
+    max-width: 50%;
+    max-height: 50%;   
+}
