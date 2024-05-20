@@ -35,4 +35,5 @@ To get a local copy of this project up and running, follow these steps:
 1. Clone this repository:
 
 ```bash
-git clone https://mohammad282001.github.io/Portfolio/
+git clone https://github.com/Mohammad282001/Portfolio.git
+
