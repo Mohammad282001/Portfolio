@@ -1,8 +1,3 @@
-/* @font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-} */
 .press-start-2p-regular {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
@@ -25,7 +20,9 @@ body{
 }
 
 
-
+/******************/
+/*    Navbar     */
+/****************/
 .navbar{
     display: flex;
     flex-direction: row-reverse;
@@ -44,18 +41,19 @@ nav ul{
 .nav-link{
     color: #fafafa;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight:bolder;
+    font-size: 1.2rem;
+    font-weight:700;
 }
 
-
+/******************/
+/*   Section 1   */
+/****************/
 .section1{
     position: relative; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
-    /* height: 800px; */
     margin-top: 15rem;
 
 
@@ -116,8 +114,9 @@ nav ul{
         transform: translateX(-100%);
     }
 }
-
-
+/******************/
+/*   Section 2   */
+/****************/
 .section2{
     display: flex;
     flex-direction: row;
@@ -133,6 +132,11 @@ nav ul{
 .effectsImg {
 
     margin-left: 5rem;
+}
+
+.effectsImg img{
+
+    width:100%;
 }
 .section2-text h1{
     color: #F2613F;
@@ -154,6 +158,11 @@ nav ul{
     font-size: large;
     word-spacing: 5px;
 }
+
+
+/******************/
+/*   Section 3   */
+/****************/
 
 .section3{
     background-color:  #9b38229b;
@@ -219,7 +228,9 @@ word-spacing: 0%;
 
 
 
-
+/******************/
+/*   Section 4   */
+/****************/
 .section4{
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -247,6 +258,8 @@ word-spacing: 0%;
     font-size: 3.5rem;
     padding: 0;
     margin: 0;
+        color: #F2613F;
+
 }
 .projects-sidebar ul{
     list-style-type: none;
@@ -333,6 +346,193 @@ background-color: #333;
     white-space: nowrap;
     position: relative;
     grid-row: 4/5;
+}
+
+/******************/
+/*   Section 5   */
+/****************/
+
+.section5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
 
 }
 
+.contact-text{
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 30%;
+    /* height: 50%; */
+    padding: 3rem;
+    position: relative;
+}
+
+.contact-text h1{
+    line-height: 1.2;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.email-btn{
+    background-color: #FAFAFA;
+    color: #1C1C20;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top:1rem ;
+    border-radius: 2px;
+}
+.contact-info img{
+
+    position: absolute;
+    width: 30%;
+    border: 5px solid #f2603f00;
+    border-radius: 505px;
+    background-color: #F2613F;
+bottom: -3rem;
+right: -3rem;
+
+
+
+}
+footer{
+    margin-top: 15rem;
+        background-color: black;
+        position:relative;
+        bottom: 0;
+
+}
+.footer-sec{
+    display: flex;
+    flex-direction: row;
+        padding: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    justify-content: space-around;
+
+}
+
+.first-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: min-content;
+
+}
+
+.footer-img{
+    width: 100%;
+}
+
+.footer-links{
+
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.fa-linkedin   {
+    background-color:#F2613F ;
+    color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 500px;
+}
+.fa-instagram{
+    background-color:#F2613F ;
+    color: #FAFAFA;
+    border-radius: 500px;
+    padding: 1rem;
+
+}
+.fa-github{
+    background-color:#F2613F ;
+    color: #FAFAFA;
+    border-radius: 500px;
+    padding: 1rem;
+
+}
+.email-link{
+    color: #fafafa;
+    text-decoration: none;
+
+}
+
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.nav-link:hover{
+    color: #F2613F;
+}
+.projectLink:hover{
+        color:#9B3922;
+
+}
+.projectLink:active{
+    color: #F2613F;
+
+}
+
+.email-btn:hover{
+    color:#FAFAFA;
+    background-color: #F2613F;
+}
+
+
+
+.email-link:hover {
+    opacity: 0.7;
+}
+
+
+
+@media screen and (max-width:800px) {
+    html{
+        font-size: 15px;
+    }
+
+    .section2{
+        flex-direction: column;
+    }
+    .section3-text p{
+        display: none;
+
+    }
+    .section3{
+        grid-template-columns: 1fr;
+    }
+    .section3-text{
+        text-align: center;
+
+    }
+    #skill{
+        padding: 1rem;
+    }
+    #skill p{
+        font-size: smaller;
+
+    }
+}
