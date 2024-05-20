@@ -147,17 +147,29 @@ nav ul{
 }
 
 .section3{
-    background-color: rgba(0, 0, 0, 0.635);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10rem;
+    background-color:  #9b38229b;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 3rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+
+    gap:3rem
+
+}
+
+.section3 h1{
+
+    font-size: 3rem;
+    font-weight: 900;
+    align-self:first baseline;
 }
 .skills-section{
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
@@ -165,9 +177,9 @@ nav ul{
 }
 
 #skill{
-    background-color: #9B3922;
-    width: 7rem;
-    height:8rem;
+    background-color:#481e14 ;
+    width: 5rem;
+    height:6rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -175,10 +187,124 @@ nav ul{
     align-items: center;
     /* font-weight: bold; */
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .skills-section img {
     max-width: 50%;
     max-height: 50%;   
 }
+
+#skill p{
+    font-size: 1rem;
+    justify-content: end;
+}
+
+
+
+
+.section4{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    background-color: black;
+    padding: 1rem;
+    padding-top: 5rem;
+    position: relative;
+
+}
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    align-items: center;
+    top: 5rem; 
+
+    max-height: 15rem;
+
+}
+.projects-sidebar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+}
+.project{
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight:bolder;
+}
+.projects{
+display: flex;
+flex-direction: column;
+gap: 5rem;
+position: relative;
+
+}
+.projects-grid{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+    grid-template-columns: 1fr;
+
+}
+.projects img{
+    width: 100%;
+}
+
+.project1-scrolling
+{
+background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
+  grid-row: 1/2;
+
+}
+
+.project-tech{
+    background-color: black;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    font-size: 0.8rem;
+}
+.projects-grid .something{
+    grid-row: 1/2;
+}
+
+.project2-scrolling
+{
+background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
+  grid-row: 2/3;
+
+}
+.project3-scrolling
+{
+background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
+grid-row: 3/4;
+}
+.project4-scrolling
+{
+background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
+  grid-row: 4/5;
+
+}
+
+
+
+/*  */
