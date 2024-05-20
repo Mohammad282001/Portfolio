@@ -28,6 +28,10 @@ This portfolio project serves as an online resume and a showcase of my projects.
 - HTML5
 - CSS3
 
+## Live URL
+
+https://mohammad282001.github.io/Portfolio/
+
 ## Getting Started
 
 To get a local copy of this project up and running, follow these steps:
